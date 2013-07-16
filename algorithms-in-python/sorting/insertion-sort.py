@@ -6,18 +6,13 @@
 import util
 
 
-def insertion_sort(array, ascend=True):
+def insertion_sort(array):
     for i in range(len(array)):
         key = array[i]
         j = i - 1
-        if ascend is True:
-            while key < array[j] and j >= 0:
-                array[j+1] = array[j]
-                j -= 1
-        else:
-            while key > array[j] and j >= 0:
-                array[j+1] = array[j]
-                j -= 1
+        while key < array[j] and j >= 0:
+            array[j+1] = array[j]
+            j -= 1
         array[j+1] = key
     return array
 
@@ -25,5 +20,5 @@ def insertion_sort(array, ascend=True):
 if __name__ == "__main__":
     l = util.generate_array(15)
     print l
-    array = insertion_sort(l, False)
+    array = insertion_sort(l)
     print array
