@@ -3,14 +3,12 @@
 
 # Merge Sort
 
-import utils
-
 
 def sort(array, low, high):
     if low < high:
         mid = (low + high) / 2
-        merge_sort(array, low, mid)
-        merge_sort(array, mid + 1, high)
+        sort(array, low, mid)
+        sort(array, mid + 1, high)
         merge(array, low, mid, high)
     return array
 
@@ -34,10 +32,3 @@ def merge(array, low, mid, high):
             else:
                 array[k] = right[j]
                 j += 1
-
-
-if __name__ == "__main__":
-    l = utils.generate_array(150)
-    print l
-    array = merge_sort(l, 0, len(l) - 1)
-    print array
