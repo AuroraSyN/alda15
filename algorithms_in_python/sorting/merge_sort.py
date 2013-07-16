@@ -6,7 +6,7 @@
 import utils
 
 
-def merge_sort(array, low, high):
+def sort(array, low, high):
     if low < high:
         mid = (low + high) / 2
         merge_sort(array, low, mid)

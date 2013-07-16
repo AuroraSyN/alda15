@@ -6,7 +6,7 @@
 import utils
 
 
-def insertion_sort(array):
+def sort(array):
     for i in range(len(array)):
         key = array[i]
         j = i - 1
