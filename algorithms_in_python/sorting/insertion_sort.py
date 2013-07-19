@@ -15,10 +15,3 @@ def sort(array):
             j -= 1
         array[j+1] = key
     return array
-
-
-if __name__ == "__main__":
-    l = utils.generate_array(15)
-    print l
-    array = insertion_sort(l)
-    print array
