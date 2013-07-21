@@ -3,11 +3,9 @@
 
 # Insertion Sort
 
-import utils
-
 
 def sort(array):
-    for i in range(len(array)):
+    for i in xrange(len(array)):
         key = array[i]
         j = i - 1
         while key < array[j] and j >= 0:

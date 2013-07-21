@@ -8,7 +8,7 @@ def find_max_crossing_subarray(array, low, mid, high):
     max_left = max_right = float("-inf")
     left_sum = float("-inf")
     sum = 0
-    for i in range(mid, low - 1, -1):
+    for i in xrange(mid, low - 1, -1):
         sum += array[i]
         if sum > left_sum:
             left_sum = sum
@@ -16,7 +16,7 @@ def find_max_crossing_subarray(array, low, mid, high):
 
     right_sum = float("-inf")
     sum = 0
-    for j in range(mid + 1, high):
+    for j in xrange(mid + 1, high):
         sum += array[j]
         if sum > right_sum:
             right_sum = sum

@@ -18,7 +18,7 @@ def merge(array, low, mid, high):
     right = array[mid + 1:high + 1]
     i = j = 0
 
-    for k in range(low, high + 1):
+    for k in xrange(low, high + 1):
         if i == len(left):
             array[k:high + 1] = right[j:]
             break
