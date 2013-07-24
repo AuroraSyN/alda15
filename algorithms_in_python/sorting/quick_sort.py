@@ -15,7 +15,7 @@ def sort(array, p, r):
 def partition(array, p, r):
     x = array[r]
     i = p - 1
-    for j in range(p, r):
+    for j in xrange(p, r):
         if array[j] <= x:
             i += 1
             tmp = array[i]

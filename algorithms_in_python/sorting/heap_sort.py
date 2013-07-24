@@ -40,7 +40,7 @@ def max_heapify(array, i):
 
 def build_max_heap(array):
     """ build a max-heap."""
-    for i in range(len(array) / 2 - 1, -1, -1):
+    for i in xrange(len(array) / 2 - 1, -1, -1):
         max_heapify(array, i)
     return array
 
@@ -48,7 +48,7 @@ def build_max_heap(array):
 def sort(array):
     """ implement the heap sort algorithm."""
     build_max_heap(array)
-    for i in range(len(array) - 1, 0, -1):
+    for i in xrange(len(array) - 1, 0, -1):
         tmp = array[0]
         array[0] = array[i]
         array[i] = tmp
