@@ -11,8 +11,7 @@ def sort(array, d):
 
 
 def insertion_sort(array, d):
-    for i in xrange(len(array)):
-        key = array[i]
+    for i, key in enumerate(array):
         j = i - 1
         while key[d] < array[j][d] and j >= 0:
             array[j+1] = array[j]

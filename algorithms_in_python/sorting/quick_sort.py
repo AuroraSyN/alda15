@@ -18,10 +18,6 @@ def partition(array, p, r):
     for j in xrange(p, r):
         if array[j] <= x:
             i += 1
-            tmp = array[i]
-            array[i] = array[j]
-            array[j] = tmp
-    tmp = array[i + 1]
-    array[i + 1] = array[r]
-    array[r] = tmp
+            array[i], array[j] = array[j], array[i]
+    array[i + 1], array[r] = array[r], array[i + 1]
     return i + 1

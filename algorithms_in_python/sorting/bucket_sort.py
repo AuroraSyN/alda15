@@ -16,13 +16,12 @@ def sort(array):
     for i in xrange(n):
         bucket[i] = insertion_sort(bucket[i])
     for i in xrange(n):
-        output +=  bucket[i]
+        output += bucket[i]
     return output
 
 
 def insertion_sort(array):
-    for i in xrange(len(array)):
-        key = array[i]
+    for i, key in enumerate(array):
         j = i - 1
         while key < array[j] and j >= 0:
             array[j+1] = array[j]
