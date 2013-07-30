@@ -76,7 +76,7 @@ class bst:
                 node.data = successor.data
                 # fix bst
                 if successor.right:
-                    node.right = successor.right 
+                    node.right = successor.right
                 if p is node:
                     p.right = successor.right
                     successor = None
