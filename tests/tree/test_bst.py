@@ -23,16 +23,16 @@ def test_build_tree():
     assert root.right.data == 10
     assert root.right.right.data == 14
     assert root.right.right.left.data == 13
-    assert root.left.left.left == None
-    assert root.left.left.right == None
-    assert root.left.right.left.left == None
-    assert root.left.right.left.right == None
-    assert root.left.right.right.left == None
-    assert root.left.right.right.right == None
-    assert root.right.left == None
-    assert root.right.right.right == None
-    assert root.right.right.left.left == None
-    assert root.right.right.left.right == None
+    assert root.left.left.left is None
+    assert root.left.left.right is None
+    assert root.left.right.left.left is None
+    assert root.left.right.left.right is None
+    assert root.left.right.right.left is None
+    assert root.left.right.right.right is None
+    assert root.right.left is None
+    assert root.right.right.right is None
+    assert root.right.right.left.left is None
+    assert root.right.right.left.right is None
 
 
 def test_preorder_travel():

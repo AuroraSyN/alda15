@@ -11,4 +11,3 @@ def test_shell_sort():
     b_result = shell_sort.sort(data.brray)
     assert a_result == data.sorted_array
     assert b_result == data.sorted_brray
- 
