@@ -4,7 +4,7 @@
 # Binary Search Tree
 
 
-class bst:
+class bst(object):
     """
     BST node:
       contains a left child, a right child and a data object
