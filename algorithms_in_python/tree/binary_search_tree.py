@@ -9,7 +9,7 @@ class bst(object):
     BST node:
       contains a left child, a right child and a data object
     """
-    def __init__(self, data):
+    def __init__(self, data=None):
         self.left = None
         self.right = None
         self.data = data
