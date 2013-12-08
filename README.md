@@ -17,12 +17,15 @@ Algorithms written in python when I'm reading the book "Introduction to Algorith
 
 #### Matrix
 
-*   strassen
+*   Strassen Algorithm
 
 #### Tree
 
 *   Binary Searh Tree
+*   Reconstruct BST
 
-#### Other
+#### String
 
+*   Manacher Max Palindrome
 *   Max Sub-array
+*   Generate Anagram
